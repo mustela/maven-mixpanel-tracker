@@ -15,8 +15,8 @@ namespace MavenMixpanelTracker;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 //We need to load the library
-require_once __DIR__ . '/lib/Mixpanel.php';
-
+\Maven\Core\Loader::load(__DIR__, '/lib/Mixpanel.php');
+		
 use Maven\Settings\OptionType,
 	Maven\Settings\Option;
 
